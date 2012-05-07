@@ -11,8 +11,39 @@
  */
 @import "normalise";
 @import "grid";
+//@import "fonts";
 
+body {
+  font: {
+    family: "Helvetica Neue", Arial, Sans-Serif;
+  }
+  & > * {
+    max-width: 1140px;
+    margin: 0px auto;
+  }
+}
+#pageheader {
+  h1 {
+    margin: 0;
+    color: black;
+    .fontface & {
+      font: 60px/60px "Helvetica Neue Bold";
+    }
+    .svg & {
+      background: {
+        image: url(../img/pan.svg);
+        position: 105px 17px;
+        repeat: no-repeat;
+        size: 91px 35px;
+      }
 
+    }
+    .no-fontface & {
+      //do something
+    }
+  }
+
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
