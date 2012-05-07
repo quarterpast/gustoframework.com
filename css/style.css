@@ -319,16 +319,26 @@ body {
     max-width: 1140px;
     margin: 0px auto; }
 
-#pageheader h1 {
-  margin: 0;
-  color: black;
-  font: 50px/60px "Helvetica Neue", Arial, Sans-Serif;
-    font-weight: bold; }
-  .svg #pageheader h1 {
-    background-image: url(../img/pan.svg);
+#pageheader {
+  border-bottom: 2px black solid;
+  height: 60px; }
+  #pageheader h1 {
+    margin: 0;
+    display: inline-block;
+    color: black;
+    font: 50px/60px "Helvetica Neue", Arial, Sans-Serif;
+      font-weight: bold;
     background-position: 150px 17px;
     background-repeat: no-repeat;
     background-size: 91px 35px; }
+    .svg #pageheader h1 {
+      background-image: url(../img/pan.svg); }
+    .no-svg #pageheader h1 {
+      background-image: url(../img/pan.png); }
+  #pageheader h2 {
+    margin: 0;
+    display: inline;
+    font-weight: normal; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
