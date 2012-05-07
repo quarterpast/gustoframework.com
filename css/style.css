@@ -313,6 +313,7 @@ body {
     clear: both; }
 
 body {
+  margin: 0;
   font-family: "Helvetica Neue", Arial, Sans-Serif; }
   body > * {
     max-width: 1140px;
@@ -320,12 +321,12 @@ body {
 
 #pageheader h1 {
   margin: 0;
-  color: black; }
-  .fontface #pageheader h1 {
-    font: 60px/60px "Helvetica Neue Bold"; }
+  color: black;
+  font: 50px/60px "Helvetica Neue", Arial, Sans-Serif;
+    font-weight: bold; }
   .svg #pageheader h1 {
     background-image: url(../img/pan.svg);
-    background-position: 105px 17px;
+    background-position: 150px 17px;
     background-repeat: no-repeat;
     background-size: 91px 35px; }
 
