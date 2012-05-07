@@ -14,6 +14,9 @@
 //@import "fonts";
 
 $font: "Helvetica Neue", Arial, Sans-Serif;
+$column-width: 80;
+$gutter-width: 15;
+$columns: 12;
 
 body {
   margin: 0;
@@ -29,8 +32,7 @@ body {
   border-bottom: 2px black solid;
   height: 60px;
   h1 {
-    margin: 0;
-    display: inline-block;
+    @include column(4);
     color: black;
     font: 50px/60px $font {
       weight: bold;
@@ -48,11 +50,21 @@ body {
     }
   }
   h2 {
-    margin: 0;
-    display: inline;
+    @include column(2);
     font-weight: normal;
   }
-
+  nav {
+    @include column(6);
+    ul {
+      @include row(6);
+      li {
+        @include column(2,6);
+        a.active {
+          border-bottom: 3px black solid;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 35em) {

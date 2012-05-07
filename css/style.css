@@ -323,8 +323,10 @@ body {
   border-bottom: 2px black solid;
   height: 60px; }
   #pageheader h1 {
-    margin: 0;
-    display: inline-block;
+    display: inline;
+    float: left;
+    width: 307.368px;
+    margin: 0 6.316px;
     color: black;
     font: 50px/60px "Helvetica Neue", Arial, Sans-Serif;
       font-weight: bold;
@@ -336,9 +338,33 @@ body {
     .no-svg #pageheader h1 {
       background-image: url(../img/pan.png); }
   #pageheader h2 {
-    margin: 0;
     display: inline;
+    float: left;
+    width: 147.368px;
+    margin: 0 6.316px;
     font-weight: normal; }
+  #pageheader nav {
+    display: inline;
+    float: left;
+    width: 467.368px;
+    margin: 0 6.316px; }
+    #pageheader nav ul {
+      display: block;
+      width: 985.263px;
+      margin: 0 -12.632px;
+      *zoom: 1; }
+      #pageheader nav ul:before, #pageheader nav ul:after {
+        content: "";
+        display: table; }
+      #pageheader nav ul:after {
+        clear: both; }
+      #pageheader nav ul li {
+        display: inline;
+        float: left;
+        width: 294.737px;
+        margin: 0 12.632px; }
+        #pageheader nav ul li a.active {
+          border-bottom: 3px black solid; }
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
